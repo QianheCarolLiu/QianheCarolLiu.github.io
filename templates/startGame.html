@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        width: 400px;
+        height:680px;
+        margin-top: 6%;
+        margin-bottom: 20%;
+        margin-left: 40%;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body >
+<div style="background-color:#00dd8c;">
+    <h1 style="color:#00f91a; text-align: center;padding-top: 50px;">CROSSWORD</h1>
+    <h1 style="color:white;  text-align: center;margin-top: 25px;">GAME</h1>
+    <h5 style="text-align: center;font-style: normal;margin-top: 30px;">DEVELOPER: Qianhe Liu</h5>
+    <p>Welcome to Crossword! Please guess a word</p>
+    <p>from the jumbled letters.</p>
+    <p>There are three levels of increasing difficulties.</p>
+    <p> You will get 1 point for guessing one correctly in </p>
+    <p>the first level, 2 points for guessing one correctly</p>
+    <p> in the second level, 3 points for guessing one </p>
+    <p>correctly in the third level.</p>
+    <p>The players who take less time gets extra points,</p>
+    <p>so let's see who get the most in the end!</p>
+    <h1 style="margin-left:36%;text-align: center;margin-top: 65px;background-color: limegreen;width: 120px;height: 50px;"><a style="text-decoration: none;" href="/beginGame">Start</a></h1>
+</div>
+<script src="{% static '/js/jquery-3.4.1.js' %}"></script>
+<script>
+    $(function(){
+        localStorage.clear();
+    })
+</script>
+</body>
+</html>
